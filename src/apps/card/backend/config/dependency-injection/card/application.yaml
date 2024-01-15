@@ -1,0 +1,6 @@
+services:
+  Contexts.card.RedisCardRepository:
+    class: ../../../../../../Contexts/ccard/ccard/infrastructure/persistence/RedisCardRepository
+  Contexts.card.GetCard:
+    class: ../../../../../../Contexts/ccard/ccard/application/get/GetCard
+    arguments: ["@Contexts.card.RedisCardRepository"]
